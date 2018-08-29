@@ -18,27 +18,43 @@
 # if they order a beer, add one to the number of beers you need to pour
 
 #print the final drinks order so you know what to make
-array=[3, 2, 6]
-# cocktail=3
-# waters=2
-# beers=6
-order=""
-until order == 'nothing' do
-    puts 'what would you like to drink?'
-    order= gets.chomp
-    case order 
-        when "cocktail"
-            array[0]+=1
-        when "water"
-            array[1]+=1
-        when "beer"
-            array[2]+=1
-        else 
-            puts "cheers!"
+    # array=[3, 2, 6]
+    # order=""
+    # until order == 'nothing'
+    # puts 'what would you like to drink?'
+    # order= gets.chomp
+    #     case order 
+    #         when "cocktail"
+    #             array[0]+=1
+    #         when "water"
+    #             array[1]+=1
+    #         when "beer"
+    #             array[2]+=1
+    #         else 
+    #             break
+    #     end
+    # end
+    # puts "i need to make #{array[0]} cocktails, #{array[1]} waters, #{array[2]} beers "
+
+  drink ={cocktail:3, water:2, beer:6}
+
+  order= ''
+  until order =='nothing'
+  puts 'what would you like to drink?'
+  order=gets.chomp
+    if order =='cocktail'
+         drink[:cocktail]+=1
+    elsif  order =='water'
+         drink[:water]+=1
+    elsif order =='beer'
+        drink[:beer]+=1
+    elsif order =="nothing"
+        break
+    else
+        puts'sorry, i do not have that!'
     end
 end
-puts "i need to make #{array[0]} cocktails, #{array[1]} waters, #{array[2]} beers "
-  
+puts "i need to make #{drink[:cocktail]} cocktails, #{drink[:water]} waters, #{drink[:beer]} beers. "
 
     
 
@@ -50,12 +66,15 @@ puts "i need to make #{array[0]} cocktails, #{array[1]} waters, #{array[2]} beer
 # water sell for $6, and cost $0.15 to make
 
 # print out the total profit for the orders you have
-cocktailprofit= 14 * array[0].to_i
-waterprofit=9 * array[1].to_i
-beerprofit=5.85 * array[2].to_f
- totalprofit= cocktailprofit + waterprofit +beerprofit
- totalprofit = totalprofit.round(2)
- print "the total profit is #{totalprofit}"
+
+
+        # cocktailprofit= 14 * array[0].to_i
+        # waterprofit=9 * array[1].to_i
+        # beerprofit=5.85 * array[2].to_f
+        # totalprofit= cocktailprofit + waterprofit + beerprofit
+        # totalprofit = totalprofit.round(2)
+        # print "the total profit is #{totalprofit}"
+
 
 # print "#{cocktailprofit} + #{waterprofit} + #{beerprofit}"
 
