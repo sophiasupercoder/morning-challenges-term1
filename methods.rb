@@ -75,4 +75,4 @@ puts y
 
 
 
-how to make it global?
+
