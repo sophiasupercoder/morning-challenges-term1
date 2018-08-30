@@ -72,3 +72,7 @@ puts x
 
 y = add(2.3, 5.9, 12.7)
 puts y
+
+
+
+how to make it global?
