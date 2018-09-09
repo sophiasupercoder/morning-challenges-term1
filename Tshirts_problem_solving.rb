@@ -13,12 +13,10 @@
 # 3. $20 times number of tshirt- discount percentage
 # 4.output result
 
-
-
 def final_price(all_shirt)
     price =20                                                                                   
 
-    unique_shirt = all_shirts.uniq    #numbers of different shirts
+    unique_shirt = all_shirts.unique    #numbers of different shirts
     total_shirts = all_shirts.length
     case  
     when unique_shirt==2
@@ -33,5 +31,3 @@ def final_price(all_shirt)
 
     final_price= (total_shirts *price)*percentage    
  end
-
-
