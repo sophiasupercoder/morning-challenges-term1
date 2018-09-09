@@ -21,6 +21,7 @@
 #
 #    Keep it as simple as you can.
 
+<<<<<<< HEAD
 # volum_bigcm= {a: 32,b : 43, c: 22.1}
 # volum_small= {d : 5, f : 7.4, g : 4 }
     # smallbox=[5, 7.4, 4]
@@ -32,6 +33,8 @@
     # puts numberofbox
 
 
+=======
+>>>>>>> a66f15b560d5615b416b1045b016e9e610546faf
 phone = [5, 7.4, 4]
 box = [32, 43, 22.1]
 
@@ -40,6 +43,7 @@ phone.permutation do |orient|
     print orient
     puts
     num_phones = (box[0] / orient[0]).to_i * (box[1] / orient[1]).to_i * (box[2] / orient[2]).to_i
+<<<<<<< HEAD
     puts num_phones
     max_phones = num_phones if num_phones > max_phones    
     #if the new number of phones is higher than the previous number (max_phones) make the new number into max_phones
@@ -59,3 +63,9 @@ puts max_phones
 
 
 
+=======
+    max_phones = num_phones if num_phones > max_phones
+end
+
+puts max_phones
+>>>>>>> a66f15b560d5615b416b1045b016e9e610546faf
