@@ -15,33 +15,10 @@
 #
 
 def vowels(string)
-
-  found_vowels = Array.new
-
-  # string.split("").each do |char|
-  #   case char.downcase
-  #   when 'a'
-  #     found_vowels['a']+=1
-  #   when 'e'
-  #     found_vowels['e']+=1
-  #   when 'i'
-  #     found_vowels['i']+=1
-  #   when 'o'
-  #     found_vowels['o']+=1
-  #   when 'u'
-  #     found_vowels['u']+=1
-  #   end
-  #   puts found_vowels
-  # end
-found_vowels.select.casecmp{|letter| found_vowels<<[]if letter=="a"||"e"||"i"||"o"||"u"}
-
-
-puts found_vowels
+vowels = string.scan(/[aeiou]/i) #use regex (regular expression) i makes it case insensitive
+# return vowels
 end
-
 require 'test/unit'
-
-
 class LargestNumberTest < Test::Unit::TestCase
   def test_vowels
     assert_equal(["e","u","i","o","o"], vowels("The quick brown fox"))
