@@ -1,4 +1,17 @@
-p {font-style: normal;
+@import url('https://fonts.googleapis.com/css?family=Ruslan+Display');
+p {
+    font-style: normal;
     font-size: 3.0rem;
+    font-family: 'Ruslan Display', cursive, serif;
 }
-.topright {position:absolute; top:15px; right:15px; width:50%; margin:0 15%  0 0}
+#logo {
+    float: left;
+    width: 50%;
+}
+#right-column {
+    float: right;
+    width: 50%;
+}
+iframe {
+    width: 100%;
+}
