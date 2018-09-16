@@ -14,9 +14,12 @@
 # Check your solution by running the tests:
 # ruby tests/07_in_array.rb
 #
-
 def in_array (needle, haystack)
   # Your code here
-  array= 
-  
+  if haystack.include? (needle)
+    true
+  else 
+    false
+  end
 end
+puts in_array("hello",["hi", "howdy", "hello"])
