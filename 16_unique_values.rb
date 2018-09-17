@@ -20,4 +20,5 @@
 
 def unique (mylist)
   # Your code here
+mylist & mylist
 end
