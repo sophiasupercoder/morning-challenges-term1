@@ -22,4 +22,18 @@
 
 class Dictionary
   # Your code here
+  def add_word (word,definition)
+  @word=word
+  @definition=definition
+  @word_definition={@word=> @definition}
+return @word_definition
+  end
+  
+  def lookup (word)
+return @word_definition[:@word]
+  end
+
+  def total_words
+    return @word_definition.length
+  end
 end
