@@ -14,4 +14,15 @@
 
 def pageTitle(url)
   # your code here
+require 'watir'
+
+browser = Watir::Browser.new
+
+browser.goto(url)
+
+puts browser.title
+
 end
+
+pageTitle("http://google.com")
+puts pageTitle.title 
