@@ -21,11 +21,13 @@
 
 def in_array_advanced (needle, haystack, strict)
   # Your code here
-haystack.each do |needle|
- if haystack.include?(needle)
- else 
-  false
+  haystack.each do |needle|
+    if haystack.include?(needle)
+      true
+    else 
+      false
+    end
+  end
 
 
-end
-end
+  
