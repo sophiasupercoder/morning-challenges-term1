@@ -14,6 +14,7 @@
 # ruby tests/04_vowels_test.rb
 #
 
+<<<<<<< HEAD
 def vowels(string)
 vowels = string.scan(/[aeiou]/i) #use regex (regular expression) i makes it case insensitive
 # return vowels
@@ -27,4 +28,8 @@ class LargestNumberTest < Test::Unit::TestCase
   def test_vowels_casing
     assert_equal(["A","e","E"], vowels("cAse tEst"))
   end
+=======
+def vowels (string)
+  string.scan(/[aeiou]/i)
+>>>>>>> d0ba6462aa9c1664cbd2c639448e180110460cf6
 end

@@ -21,6 +21,7 @@
 #
 
 class Dictionary
+<<<<<<< HEAD
   # Your code here
   def add_word (word,definition)
   @word=word
@@ -35,5 +36,18 @@ return @word_definition[:@word]
 
   def total_words
     return @word_definition.length
+=======
+  def initialize
+    @words = {}      
+  end
+  def add_word(key, val)
+    @words[key] = val
+  end
+  def total_words
+    @words.length
+  end
+  def lookup(key)
+    @words[key]
+>>>>>>> d0ba6462aa9c1664cbd2c639448e180110460cf6
   end
 end
