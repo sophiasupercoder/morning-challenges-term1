@@ -21,22 +21,6 @@
 #
 
 class Dictionary
-<<<<<<< HEAD
-  # Your code here
-  def add_word (word,definition)
-  @word=word
-  @definition=definition
-  @word_definition={@word=> @definition}
-return @word_definition
-  end
-  
-  def lookup (word)
-return @word_definition[:@word]
-  end
-
-  def total_words
-    return @word_definition.length
-=======
   def initialize
     @words = {}      
   end
@@ -48,6 +32,5 @@ return @word_definition[:@word]
   end
   def lookup(key)
     @words[key]
->>>>>>> d0ba6462aa9c1664cbd2c639448e180110460cf6
   end
 end

@@ -31,13 +31,6 @@
 #
 
 def firstNonRepeat (string)
-<<<<<<< HEAD
-
-    string.chars.each { |x| return x if string.count(x) == 1 }
-  false
-  
-=======
   string.chars.each { |x| return x if string.count(x) == 1 }
-  false
->>>>>>> d0ba6462aa9c1664cbd2c639448e180110460cf6
+   return false
 end
