@@ -15,11 +15,7 @@
 #
 
 def count_letters (string)
-<<<<<<< HEAD
-  result = {} # You'll need an empty hash to get started!clear
-=======
   result = {} # You'll need an empty hash to get started!
->>>>>>> d0ba6462aa9c1664cbd2c639448e180110460cf6
   
   # Your code here
   for char in string.chars do

@@ -39,11 +39,7 @@ end
 
 # main
 
-<<<<<<< HEAD
-# ASSUMPTION: Every plywood sheet (including the last one) has the maximum number of bases possible cut from it, even if this yields more than lamp_bases_required bases. The extras are assumed to be stored in a warehouse until needed. This is probably more efficient, and the cutting machine probably only takes a full sheet of plywood.
-=======
 # ASSUMPTION: Every plywood sheet (including the last one) has the maximum number of bases possible cut from it, even if this yields more than lamp_bases_required bases. The extras are assumed to be stored in a warehouse until needed.
->>>>>>> a66f15b560d5615b416b1045b016e9e610546faf
 plywood = PlywoodSheet.new(1200, 2400, 28.47)
 lamp_base = LampBase.new(320)
 lamp_bases_required = 500
@@ -56,7 +52,6 @@ total_cost = sheets_required * plywood.cost
 total_wastage = sheets_required * wastage_per_sheet
 
 puts "You will need #{sheets_required} sheets of plywood which will cost a total of $#{total_cost}."
-<<<<<<< HEAD
 # convert total_wastage to square metres
 puts "You will waste #{(total_wastage / 1000000).round(3)} sq metres of plywood."
 
@@ -67,6 +62,3 @@ puts "You will waste #{(total_wastage / 1000000).round(3)} sq metres of plywood.
 
 
 # total_waste= 
-=======
-puts "You will waste #{(total_wastage / 1000000).round(3)} sq metres of plywood."
->>>>>>> a66f15b560d5615b416b1045b016e9e610546faf
