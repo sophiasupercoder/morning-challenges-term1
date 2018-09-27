@@ -17,9 +17,15 @@
 # Check your solution by running the tests:
 # ruby tests/14_included_once_test.rb
 #
-def includedOnce (haystack, needle)
-  haystack.count(needle) == 1
-end
-
-
-
+def includedOnce (array, string)
+  if array.count(string) == 1
+    true
+  else
+    false
+    
+  end
+end 
+  
+  
+  
+  
