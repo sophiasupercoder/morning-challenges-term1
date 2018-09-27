@@ -9,6 +9,6 @@
      fib(num-1) + fib(num-2)
   end
 end
-puts fib(4)
 
 # It would output a syntax error due to the underscore instead of a close parenthesis on line 5.
+puts  fib(55)
