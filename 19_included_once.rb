@@ -17,11 +17,9 @@
 # Check your solution by running the tests:
 # ruby tests/14_included_once_test.rb
 #
-
 def includedOnce (haystack, needle)
-<<<<<<< HEAD
-   haystack.count(needle) == 1
-=======
   haystack.count(needle) == 1
->>>>>>> d0ba6462aa9c1664cbd2c639448e180110460cf6
 end
+
+
+
