@@ -23,5 +23,13 @@
 #
 
 def ExesAndOhs(string)
-  string.upcase!.count('X') == string.count('O')
+  string.upcase.count('X') == string.upcase.count('O')
 end
+
+
+# ExesAndOhs("xooxx") => false
+# ExesAndOhs("sxoowxxoq") => true
+# ExesAndOhs("oOxXxoXo") => true
+# puts ExesAndOhs("oOxXxoX") #=> false
+# ExesAndOhs("zpzpzpp") => true
+# puts ExesAndOhs("ooxx") #=> true
