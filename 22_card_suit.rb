@@ -8,6 +8,8 @@
 # ('3S') -> return 'spades'
 
 def define_suit(card)
-  # Good luck
+ 
+
+  
 end
 
