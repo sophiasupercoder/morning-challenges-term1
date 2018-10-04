@@ -23,6 +23,24 @@
 # highScoreTable.scores == []
 # # And so on...
 
-class HighScoreTable
-  # your code here
+  class HighScoreTable
+  attr_accessor :scores
+
+  def initialize(max_length)
+    @max_length = max_length
+    @scores = []
+  end
+  def update(score)
+    # Append the new score to the high score table
+    @scores << score
+    # Destructively sort then reverse to get a descending sort (i.e. highest scores first)
+    @scores.sort!.reverse!
+    # Destructively discard all elements except the first @max_length elements.
+    @scores.slice!(@max_length, @scores.length)
+  end
+  def reset
+    @scores = []
+  end
 end
+
+
