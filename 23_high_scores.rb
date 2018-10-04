@@ -23,9 +23,10 @@
 # highScoreTable.scores == []
 # # And so on...
 
-  class HighScoreTable
-  attr_accessor :scores
 
+class HighScoreTable
+  attr_accessor :scores
+  
   def initialize(max_length)
     @max_length = max_length
     @scores = []
@@ -42,5 +43,4 @@
     @scores = []
   end
 end
-
 
